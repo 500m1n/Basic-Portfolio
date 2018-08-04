@@ -11,47 +11,63 @@
 </head>
 
 <body>
-    <ul>
-        <h1>Daniel Lee</h1>
+    
+    <header class="clearfix">
+        <div class="container">
+        <div class="name">Daniel Lee</div>
+        
+        <nav>
 
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-        <li>
-            <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li>
-            <a href="index.html">About</a>
-        </li>
-    </ul>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="index.html">About</a>
+            </li>
+        </div>
+
+        </nav>
+    </header>
+   
 
 
-    <h2>Contact</h2>
+    <div class="aboutMe container clearfix">
+    
+        <h2>Contact</h2>
+        <hr>
 
-    <div class="container">
-        <form action="action_page.php">
+        
+        <div class="contactform">
+            <form action="action_page.php">
+    
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="John Smith">
+    
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="email" placeholder="example@gmail.com">
+    
+            
+                </select>
+    
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+                <input type="submit" value="Submit">
+    
+            </form>
+        </div>
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+    
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
-
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-        </form>
+    <div class="footer">
+        <p>Copyright ©</p>
     </div>
 
+    
 </body>
 
 </html>
